@@ -1,0 +1,6 @@
+CREATE USER scipulse WITH PASSWORD 'scipulse';
+CREATE DATABASE scipulse OWNER scipulse;
+
+\c scipulse
+CREATE SCHEMA IF NOT EXISTS staging AUTHORIZATION scipulse;
+CREATE SCHEMA IF NOT EXISTS marts   AUTHORIZATION scipulse;
